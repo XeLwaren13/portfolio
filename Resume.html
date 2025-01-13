@@ -16,6 +16,10 @@
   <style>
     body {
       background-color: #5a23c8 !important;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
     }
 
     .bd-placeholder-img {
@@ -98,7 +102,7 @@
   <link href="cover.css" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-center text-bg-dark">
+<body class="d-flex min-vw-100 min-vh-100 text-center text-bg-dark">
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
       <path
@@ -180,12 +184,27 @@
       </div>
     </header>
     <main class="p-3 mb-auto">
-      <iframe src="assets/certificate/Axelwaren_Oleno_AspiringSoftwareDeveloper_Resume-2025.pdf" width="100%"
-        height="500px"></iframe>
+      <iframe src="https://drive.google.com/file/d/1W4qQNScunFJRSYSeKiBS6088gXlY71Vv/preview" class="container-sm"
+        width="640" height="500px"></iframe>
+      <div class="container-sm text-center">
+        <p>If you’d need a soft copy of my full resume, please <a href="mailto:axelwarenoleno@gmail.com">email me</a>.
+        </p>
+      </div>
     </main>
     <!-- <footer class="mt-auto text-white-50">
     </footer> -->
   </div>
+
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+  <script>
+    window.onbeforeprint = function () {
+      alert('Printing is disabled for this page, please contact developer of this page.');
+      return false;
+    };
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
