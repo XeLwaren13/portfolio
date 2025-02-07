@@ -2,6 +2,12 @@
  * Globals
  */
 
+html,
+body {
+  min-height: 100%;
+  height: auto;
+}
+
 /* Custom default button */
 .btn-light,
 .btn-light:hover,
