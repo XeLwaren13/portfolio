@@ -52,3 +52,7 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+.nav-masthead a {
+  display: inline-block;
+}
